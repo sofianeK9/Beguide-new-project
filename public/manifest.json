@@ -4,8 +4,9 @@
   "version": "1.0.1",
   "description": "Beguide est l’outil d’onboarding accompagnant n’importe qui, n’inporte quand et n’importe ou.",
 
-  "action": {"default_popup": "public/popup.html"},
-  
+  "action": {
+    "default_popup": "index.html"},
+
   "default_icon": {             
       "16": "logo192.png",  
       "24": "logo192.png",  

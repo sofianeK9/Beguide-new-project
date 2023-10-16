@@ -9,7 +9,7 @@ module.exports = {
     // background: "./src/background.jsx",
   },
   output: {
-    filename: "[name].js",
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/popup.html",
+      template: "./src/index.html",
       filename: "index.html",
     }),
     new CopyPlugin({

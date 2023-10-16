@@ -26,6 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/, // Appliquez cette règle aux fichiers .css
+        include: path.resolve(__dirname, 'src/components'),
         use: ['style-loader', 'css-loader'], // Utilisez ces loaders dans cet ordre
       },
     ],
@@ -38,6 +39,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "public"},
+        { from: "src/components", to: "components" },
       ],
     }),
   ],
